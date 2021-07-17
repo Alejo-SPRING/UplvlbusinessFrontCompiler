@@ -1,0 +1,53 @@
+.images {
+    width: 50%;
+}
+
+.hover:hover {
+    cursor: pointer;
+}
+
+.fondo {
+    background-color: #345344 !important;
+}
+
+.textohover:hover {
+    color: #C3966A !important;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.active {
+    color: #C3966A !important
+}
+
+.fondohover:hover {
+    background-color: #C3966A !important;
+}
+
+.fondo2 {
+    background-color: #E4BE98 !important;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.texto-color {
+    color: #ddad7a !important;
+}
+
+.texto-color2 {
+    color: #235A40 !important;
+}
+
+.gris {
+    background-color: rgba(4, 4, 4, 0.1);
+}
+
+.validTextArea {
+    height: 250px;
+    min-height: 100px;
+    max-height: 300px;
+}

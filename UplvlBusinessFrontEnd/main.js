@@ -1034,6 +1034,11 @@ class UsuarioService {
         this.http = http;
         this.utilidades = new _utilidades__WEBPACK_IMPORTED_MODULE_3__["Utilidades"]();
     }
+    getAllRoles() {
+        return this.http.get(this.utilidades.endPoint + "/api/usuario/getAllRoles", { headers: this.utilidades.getHeaders() }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(error => {
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(error);
+        }));
+    }
     findUsersByNameOrAll(name, page, size) {
         return this.http.get(this.utilidades.endPoint + "/api/usuario/findByNameOrAll/" + name + "/" + page + "/" + size, { headers: this.utilidades.getHeaders() }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["catchError"])(error => {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["throwError"])(error);
